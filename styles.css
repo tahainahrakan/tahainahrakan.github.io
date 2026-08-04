@@ -162,6 +162,15 @@ ul { list-style: none; }
 .info-link { display: inline-block; margin-top: 16px; color: var(--color-accent); font-weight: 600; font-size: .9rem; transition: opacity .2s; }
 .info-link:hover { opacity: .75; }
 
+/* Certificates */
+.info-subtitle { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted); margin: 22px 0 12px; }
+.cert-list { display: flex; flex-direction: column; gap: 10px; }
+.cert-link { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-sm); transition: all .2s var(--ease); }
+.cert-link:hover { border-color: rgba(34,197,94,.45); transform: translateY(-2px); }
+.cert-name { font-size: .9rem; font-weight: 600; color: #E2E8F0; line-height: 1.35; }
+.cert-link:hover .cert-name { color: var(--color-accent); }
+.cert-issuer { font-size: .78rem; color: var(--color-muted); }
+
 /* Goal callout */
 .about-goal {
   margin-top: 30px; padding: 24px 26px;
