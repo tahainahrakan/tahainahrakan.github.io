@@ -127,8 +127,42 @@
         <header class="section-head">
           <span class="section-tag">02 — Projects</span>
           <h2 class="section-title">Selected work</h2>
-          <p class="section-sub">Applied machine learning projects — more on the way.</p>
+          <p class="section-sub">Applied machine learning and full-stack projects — more on the way.</p>
         </header>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="images/projects/gaddum.jpg" alt="Gaddum Stone Age collection — cream and navy t-shirts against a desert landscape" loading="lazy" class="project-img">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Stripe</span>
+              <span class="tag">RAG</span>
+              <span class="tag">Docker</span>
+            </div>
+            <h3 class="project-title">Gaddum — Modern Essentials</h3>
+            <p class="project-desc">The full e-commerce platform behind my own UAE t-shirt brand — designed, built and deployed end to end. Browsing and search, cart, promo codes, Stripe checkout, order tracking with delivery updates, customer accounts with wishlists and saved addresses, and an admin dashboard the shop runs on day to day without touching code.</p>
+            <ul class="project-highlights">
+              <li>RAG shopping assistant answers only from a purpose-built index of the shop's own content via PostgreSQL full-text search — and says so when the answer isn't there</li>
+              <li>Privacy by construction: order lookups are bound to the signed-in customer server-side, and stock counts and promo codes are never indexed at all</li>
+              <li>Inventory can't oversell — stock is claimed inside a transaction with row-level locking, so the database decides who gets the last item</li>
+              <li>Prices frozen at purchase and promo limits enforced atomically, so editing a product never rewrites order history</li>
+            </ul>
+            <div class="project-stats">
+              <div class="pstat"><span class="pstat-num">Live</span><span class="pstat-label">gaddum.store</span></div>
+              <div class="pstat"><span class="pstat-num">278</span><span class="pstat-label">Automated tests</span></div>
+              <div class="pstat"><span class="pstat-num">RAG</span><span class="pstat-label">Shop assistant</span></div>
+              <div class="pstat"><span class="pstat-num">Stripe</span><span class="pstat-label">Payments</span></div>
+              <div class="pstat"><span class="pstat-num">Docker</span><span class="pstat-label">Deployment</span></div>
+            </div>
+            <div class="project-actions">
+              <a href="https://gaddum.store" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit the Store</a>
+              <a href="#contact" class="btn btn-ghost btn-sm">Get in Touch</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project-card">
           <div class="project-media">
